@@ -8,16 +8,16 @@
 /* ############################################# */
 body {
 	margin: 0;
-    padding: 0;
+	padding: 0;
 }
 p {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.5em;
-    text-align: justify;
-    text-indent: 2em;
-    widows: 2;
-    orphans: 2;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5em;
+  text-align: justify;
+  text-indent: 2em;
+  widows: 2;
+  orphans: 2;
 }
 
 
@@ -53,12 +53,12 @@ h6 {text-align: left;}
 	text-align: center;
 }
 .byline {
-    margin-top: 2em;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-indent: 0;
-    text-align: center;
-    font-style: italic;
+  margin-top: 2em;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-indent: 0;
+  text-align: center;
+  font-style: italic;
 }
 .author {
 	text-indent: 0;
@@ -67,7 +67,6 @@ h6 {text-align: left;}
 	text-align: center;
 }
 
-
 /* ############################################# */
 /* ################### NAV doc ################# */
 /* ############################################# */
@@ -75,7 +74,6 @@ nav[epub\:type~='landmarks'], nav[epub\:type~='page-list'] { /* Selectors workin
 	display: none;
 	visibility: hidden;
 }
-
 nav ol {
 	padding-left: 0;
 }
@@ -92,7 +90,6 @@ nav ol ol li { /* toc2 */
 	text-indent: -1.5em;
 	margin-left: 3em;
 }
-
 
 /* ############################################# */
 /* ################### Images ################## */
@@ -113,7 +110,6 @@ p.caption {
 	font-weight: bold;
 	margin: 0 10%;
 }
-
 
 /* ########### Container ########### */
 div.img_fs_cap {
@@ -152,4 +148,3 @@ img#img_vh {
 /* ############################################# */
 em, i, .italic {font-style: italic;}
 strong, b, .bold {font-weight: bold;}
-
