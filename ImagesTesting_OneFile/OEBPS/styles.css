@@ -71,9 +71,9 @@ h6 {text-align: left;}
 /* ############################################# */
 /* ################### NAV doc ################# */
 /* ############################################# */
-nav[epub\:type~='landmarks'], nav[epub\:type~='page-list'] {
-   display: none;
-   visibility: hidden;
+nav[epub\:type~='landmarks'], nav[epub\:type~='page-list'] { /* Selectors working in older devices */
+	display: none;
+	visibility: hidden;
 }
 
 nav ol {
@@ -84,13 +84,13 @@ ol.notlist li {
 }
 nav ol li { /* toc1 */
 	text-align: left;
-    text-indent: -1.5em;
-    margin-left: 1.5em;
+	text-indent: -1.5em;
+	margin-left: 1.5em;
 }
 nav ol ol li { /* toc2 */
 	text-align: left;
-    text-indent: -1.5em;
-    margin-left: 3em;
+	text-indent: -1.5em;
+	margin-left: 3em;
 }
 
 
@@ -101,8 +101,8 @@ p#cover {
 	text-align: center;
 }
 img#coverimage {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 /* ########### Captions ########### */
@@ -141,11 +141,11 @@ div.img_pct {
 img#img_vh {
 	height: 80%;
 }
-
-img#img_vh:only-of-type { /*overrides the previous setting, but only in newer systems that support CSS3 */
-	height: 80vh;
+@supports (height:80vh) { /* Better way how to grab the CSS3 functionality */
+	img#img_vh {
+		height: 80vh;
+	}
 }
-
 
 /* ############################################# */
 /* #################### Other ################## */
